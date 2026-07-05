@@ -17,7 +17,7 @@ Y entra a `http://localhost:8000`.
 Puedes cambiar el nombre y la fecha directamente en la URL, sin tocar el código:
 
 ```text
-index.html?nombre=Sofía&fecha=2025-06-04
+https://yellow-flowers-url.vercel.app/index.html?nombre=Eduarda&fecha=2026-04-13
 ```
 
 - **nombre**: a quién van dedicadas las flores.

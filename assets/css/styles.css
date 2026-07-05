@@ -1,0 +1,126 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #F5E8DC;
+	font-size: 20px;
+	font-family: '微软雅黑', '宋体', sans-serif;
+	color: #5C4033;
+	overflow-x: hidden;
+}
+
+a {
+	color: #5C4033;
+	font-size: 14px;
+}
+
+#main {
+	width: 100%;
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+#wrap {
+	position: relative;
+	margin: 0 auto;
+	width: min(1100px, 94vw);
+	aspect-ratio: 1100 / 680;
+	margin-top: clamp(12px, 6vh, 100px);
+}
+
+#text {
+	width: min(400px, 40%);
+	left: clamp(16px, 4.8vw, 60px);
+	top: clamp(12px, 8vh, 80px);
+	position: absolute;
+	z-index: 2;
+}
+
+#code {
+	display: none;
+	font-size: clamp(16px, 2.4vw, 30px);
+	line-height: 1.3;
+}
+
+#clock-box {
+	position: absolute;
+	left: clamp(16px, 4.8vw, 60px);
+	bottom: clamp(8px, 2.5vh, 28px);
+	font-size: clamp(16px, 2.1vw, 28px);
+	display: none;
+	z-index: 2;
+}
+
+#clock-box a {
+	font-size: clamp(18px, 2.3vw, 30px);
+	text-decoration: none;
+}
+
+#clock {
+	margin-left: 5px;
+}
+
+#clock .digit {
+	font-size: clamp(20px, 3vw, 40px);
+}
+
+#canvas {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.hand {
+	cursor: pointer;
+}
+
+.say {
+	margin-left: 5px;
+}
+
+.space {
+	margin-right: clamp(30px, 12vw, 150px);
+}
+
+@media (max-width: 768px) {
+	#main {
+		padding: 10px;
+	}
+
+	#wrap {
+		width: 96vw;
+		margin-top: 8px;
+	}
+
+	#text {
+		width: 50%;
+		left: 12px;
+		top: 12px;
+	}
+
+	#clock-box {
+		left: 12px;
+		bottom: 8px;
+	}
+}
+
+@media (max-width: 480px) {
+	#text {
+		width: 58%;
+	}
+
+	#code {
+		font-size: 14px;
+	}
+
+	#clock-box {
+		font-size: 14px;
+	}
+
+	#clock-box a {
+		font-size: 15px;
+	}
+
+	#clock .digit {
+		font-size: 17px;
+	}
+}
